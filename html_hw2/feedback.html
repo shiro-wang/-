@@ -1,0 +1,119 @@
+<!-- 4108056004 王思正 第一次作業 9/29
+4108056004 MingWangThe First Homework 9/29 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁程式設計第I次作業_4108056004_王思正</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <a href="/html_hw1/main_v1.html"><img src="/html_hw1/img/nchu.png" alt="nchu" style="width: 80%; max-width: 800pt; height: auto; margin-left: auto; margin-right: auto;"></a>
+    </div>
+    <div class="container" >
+        <div>
+            <ul style="list-style-type: none; margin: 0; padding: 0; overflow: visible; background-color: #333;">
+                <div style="position: relative; display: inline-block;">
+                    <li style="background-color: #333; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer;">
+                        <a href="/html_hw1/main_v1.html" style="display: block; color: white; text-align: center; text-decoration: none;">&lt;&lt;首頁</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="feedback" style="margin: 10px auto; width: 80% auto; max-width: 800pt;">
+            <form method = "post" action = "./" style="margin: 10pt auto;" autocomplete="on">
+                <input type = "hidden" name = "recipient" value = "deitel@deitel.com">
+                <input type = "hidden" name = "subject" value = "Feedback Form">
+                <input type = "hidden" name = "redirect" value = "main.html"> 
+                <p>
+                    <label>姓名:
+                        <input name = "name" type = "text" size = "25">
+                </label>
+                </p>
+                <p><label>信箱:
+                    <input name = "email" id="email" type="email" placeholder="name@doamin.com">
+                </label>
+                </p>
+                <!-- <textarea> creates a multiline textbox -->
+                <p>
+                    <label>意見:<br>
+                        <textarea name = "comments" rows = "4" cols = "36">Enter comments here.</textarea>
+                    </label>
+                </p>
+    
+                <!-- <input type = "password"> inserts a -->
+                <!-- textbox whose display is masked with -->
+                <!-- asterisk characters -->
+                <p>
+                    <label>E-mail信箱: 
+                        <input name = "email" type = "password"  size = "25">
+                    </label>
+                </p>              
+    
+                <p><strong>喜歡的地方:</strong><br>
+                    <label>網頁設計
+                        <input name = "thingsliked" type = "checkbox" value = "Design"></label>
+                    <label>連結方式
+                        <input name = "thingsliked" type = "checkbox" value = "Links"></label>
+                    <label>操作難度
+                        <input name = "thingsliked" type = "checkbox" value = "Ease"></label> 
+                    <label>美化
+                        <input name = "thingsliked" type = "checkbox" value = "Images"></label>
+                    <label>編碼方式
+                        <input name = "thingsliked" type = "checkbox" value = "Code"></label>
+                </p>
+    
+                <!-- <input type = "radio"> creates a radio -->
+                <!-- button. The difference between radio buttons -->
+                <!-- and checkboxes is that only one radio button -->
+                <!-- in a group can be selected. -->
+                <p><strong>如何到此網站:</strong><br>
+                    <label>搜尋系統
+                        <input name = "howtosite" type = "radio" value = "search engine" checked></label>
+                    <label>從別的網站 
+                        <input name = "howtosite" type = "radio" value = "link"></label> 
+                    <label>其他
+                        <input name = "howtosite" type = "radio" value = "other"></label>
+                </p>
+    
+                <p><label>綜合評分: 
+                    <!-- the <select> tag presents a drop-down -->
+                    <!-- list with choices indicated by the -->
+                    <!-- <option> tags -->
+                        <select name = "rating">
+                            <option selected>Amazing</option>
+                            <option>10</option>
+                            <option>9</option>
+                            <option>8</option>
+                            <option>7</option>
+                            <option>6</option>
+                            <option>5</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                            <option>Awful</option>
+                    </select>
+                </label>
+                </p>
+    
+                <p>
+                <input type = "submit" value = "繳交">
+                <input type = "reset" value = "清除">
+                </p>   
+            </form>
+        </div>
+    </div>
+    <footer style="align-items: center;">
+        <div style="width:80% ;margin: 100px auto; text-align: left; max-width: 800pt; font-size: 10px; background-color: rgb(196, 250, 250);">
+            <p>國立中興大學資訊工程學系</p>
+            <p>402 台中市南區興大路 145 號 - 理學大樓 8 樓 </p>
+            <p>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</p>
+            <p>MAIL: ce@dragon.nchu.edu.tw</p>
+            <p>&copy; 2022 shiro-wang</p>
+            <a href="/html_hw1/feedback.html">意見回饋系統</a>
+        </div>
+    </footer>
+</body>
+</html>
