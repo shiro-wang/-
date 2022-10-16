@@ -1,0 +1,212 @@
+<!-- 4108056004 王思正 第一次作業 9/29
+4108056004 MingWangThe First Homework 9/29 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁程式設計第I次作業_4108056004_王思正</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: #111;
+          }
+          .dropbtn {
+          background-color: #333;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          }
+  
+          /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+          position: relative;
+          display: inline-block;
+          }
+  
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          }
+  
+          /* Links inside the dropdown */
+          .dropdown-content a {
+          color: black;
+          padding: 16px 16px;
+          text-decoration: none;
+          display: block;
+          }
+  
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #f1f1f1}
+  
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {
+          display: block;
+          }
+  
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+          .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+          }
+          .responsive {
+          width: 80%;
+          max-width: 800pt;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          }
+  
+          .content{
+            width:80% ;margin: 20px auto; text-align: center
+          }
+  
+          .foot{
+            align-items: center; width:80% ;margin: 100px auto; text-align: left; max-width: 800pt; font-size: 10px; background-color: rgb(196, 250, 250);
+          }
+          .midmessage{
+            margin: 10px auto; width: 80% auto; max-width: 800pt;
+          }
+          .filel{
+            margin: 15pt 0; border: rgb(233, 233, 233); border-style: solid; width: 48%; float: left; padding: 5pt;
+          }
+          .filer{
+            margin: 15pt 0; border: rgb(233, 233, 233); border-style: solid; width: 48%; float: right; padding: 5pt;
+          }
+          
+          .file table{
+            font-size:15px; border: 1px rgb(182, 182, 182); border-collapse: collapse;
+          }
+          .file tr {
+            border-collapse: collapse;
+          }
+          .clearfix{
+            clear: both;
+          }
+    </style>
+</head>
+<body>
+    <p style="text-align: center;">
+        <a href="/html_hw2/main_v1.html"><img src="/html_hw2/img/nchu.png" alt="nchu" style="width: 80%; max-width: 800pt; height: auto; margin-left: auto; margin-right: auto;"></a>
+    </p>
+    <div class="container" >
+        <div>
+            <ul>
+                <div class="dropdown">
+                    <li>
+                        <a href="/html_hw2/main_v1.html">&lt;&lt;前頁</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="midmessage">
+        <div class="filel">
+            <p style="font-size: 20px; text-align:left"><strong>陳秀蘭 / 技佐</strong></p>
+            <table>
+                <tr>
+                    <td style="width: 70pt;">連絡電話：</td>
+                    <td>(04)22840497 ext 801</td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">電子信箱：</td>
+                    <td><a href="chenhl@nchu.edu.tw">chenhl@nchu.edu.tw</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">業務職掌：</td>
+                    <td>系所經費管理、教師業務、課程業務、公文檔案管理、工作會報、選舉業務、招生業務(大學部)、系務會議、其他臨時交辦業務。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="filer">
+            <p style="font-size: 20px; text-align:left"><strong>陳丹尼 / 行政組員</strong></p>
+            <table>
+                <tr>
+                    <td style="width: 70pt;">連絡電話：</td>
+                    <td>(04)22840497 ext 822</td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">電子信箱：</td>
+                    <td><a href="tnchen1013@nchu.edu.tw">tnchen1013@nchu.edu.tw</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">業務職掌：</td>
+                    <td>招生業務(博士班、碩士在職專班)、碩士班報到遞補作業、教育部招生總量提報作業、專題演講、圖書採購、網頁管理、考生系統管理、學生獎懲業務、系所評鑑、系友會業務、導生分配。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix"></div>
+        <div class="filel">
+            <p style="font-size: 20px; text-align:left"><strong>陳靖怡 / 行政辦事員</strong></p>
+            <table>
+                <tr>
+                    <td style="width: 70pt;">連絡電話：</td>
+                    <td>(04)22840497 ext 815</td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">電子信箱：</td>
+                    <td><a href="lily21126@nchu.edu.tw">lily21126@nchu.edu.tw</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">業務職掌：</td>
+                    <td>學生學分相關業務、研究生各項考核業務、學生離校、休退學申請、研究生獎助學金、學生各類學習輔導業務、招生業務(轉學考、外籍生、港澳僑生、碩士甄試)、雙主修輔系業務。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="filer">
+            <p style="font-size: 20px; text-align:left"><strong>翁繹佳 / 行政辦事員</strong></p>
+            <table>
+                <tr>
+                    <td style="width: 70pt;">連絡電話：</td>
+                    <td>(04)22840497 ext 824</td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">電子信箱：</td>
+                    <td><a href="jbee.jbee.0624@cs.nchu.edu.tw">jbee.jbee.0624@cs.nchu.edu.tw</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 70pt;">業務職掌：</td>
+                    <td>場地出借、門禁管理、系館維修、電腦教室管理、財產管理、工讀生管理、管委會相關事宜、車輛通行證申請、新生座談會、畢業典禮、資訊專題、各類獎學金申請、路跑活動。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer style="align-items: center;">
+        <div style="width:80% ;margin: 100px auto; text-align: left; max-width: 800pt; font-size: 10px; background-color: rgb(196, 250, 250);">
+            <p>國立中興大學資訊工程學系</p>
+            <p>402 台中市南區興大路 145 號 - 理學大樓 8 樓 </p>
+            <p>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</p>
+            <p>MAIL: ce@dragon.nchu.edu.tw</p>
+            <p>&copy; 2022 shiro-wang</p>
+            <a href="/html_hw2/feedback.html">意見回饋系統</a> | <a href="/html_hw2/webmap.html">網站地圖</a> | <a href="/html_hw2/enweb/main_v1_en.html">English</a>
+        </div>
+    </footer>
+</body>
+</html>

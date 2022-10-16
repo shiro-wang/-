@@ -1,0 +1,307 @@
+<!-- 4108056004 王思正 第一次作業 9/29
+4108056004 MingWangThe First Homework 9/29 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁程式設計第I次作業_4108056004_王思正</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: #111;
+          }
+          .dropbtn {
+          background-color: #333;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          }
+  
+          /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+          position: relative;
+          display: inline-block;
+          }
+  
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          }
+  
+          /* Links inside the dropdown */
+          .dropdown-content a {
+          color: black;
+          padding: 16px 16px;
+          text-decoration: none;
+          display: block;
+          }
+  
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #f1f1f1}
+  
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {
+          display: block;
+          }
+  
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+          .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+          }
+          .responsive {
+          width: 80%;
+          max-width: 800pt;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          }
+  
+          .content{
+              width:80% ;margin: 20px auto; text-align: center
+          }
+  
+          .foot{
+              align-items: center; width:80% ;margin: 100px auto; text-align: left; max-width: 800pt; font-size: 10px; background-color: rgb(196, 250, 250);
+          }
+
+          .dashline{
+            border: 2px dashed rgb(194, 194, 194);
+            }
+
+          .midmessage{
+            margin: 10px auto; width: 50% auto; max-width: 800pt;
+          }
+          .labfile{
+            margin: 30pt 0;
+          }
+          .labfile img{
+            display:block ;margin: 0 auto; width: 200px; float: left; position: relative; top: 30px;
+          }
+          .labfile table{
+            margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 600pt
+          }
+          .labfile tr {
+            border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;
+          }
+          .labcontent{
+            float: right;
+          }
+          .clearfix{
+            clear: both;
+          }
+          
+    </style>
+</head>
+<body>
+    <p style="text-align: center;">
+        <a href="/html_hw2/main_v1.html"><img src="/html_hw2/img/nchu.png" alt="nchu" style="width: 80%; max-width: 800pt; height: auto; margin-left: auto; margin-right: auto;"></a>
+    </p>
+    <div class="container" >
+        <div>
+            <ul>
+                <div class="dropdown">
+                    <li>
+                        <a href="/html_hw2/main_v1.html">&lt;&lt;前頁</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="midmessage">
+        <div class="labfile">
+            <img src="/html_hw2/img/lab_picture/SIPLab.jpg">
+            <div class="labcontent">
+                <p style="font-size: 20px; text-align:center;"><strong>訊號與影像處理實驗室</strong></p>
+                <p style="font-size: 15px; text-align:center; position:relative; top: -2px;">Signal and Image Processing Lab</p>
+                <table>
+                    <tr>
+                        <td style="width: 70pt;">指導教授：</td>
+                        <td>吳俊霖</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">位　　置：</td>
+                        <td>應用科技大樓 347室[電話：04-22840884轉347]</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">網　　址：</td>
+                        <td><a href="https://drphototw.wixsite.com/wujl/siplab">https://drphototw.wixsite.com/wujl/siplab</a></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">簡　　介：</td>
+                        <td>	
+                            簡稱「SIP Lab」，本實驗室的研究重點為影像處理、機器學習、機器視覺、多媒體訊號處理、圖訊識別、計算攝影等相關領域。除了相關理論與演算法的研究外，也積極參與相關產學合作計畫，期望能藉由跨領域的合作，對相關產業的技術提升有所貢獻。目前我們主要的研究方向有：一、影像處理與機器視覺，包含影像處理與去模糊技術、相機校正與光學瑕疵檢測應用等；二、機器學習，包含深度學習的理論與應用；三、多媒體訊號處理，包含音訊指紋與視訊處理等；四、圖訊識別，包含統計與類神經網路分類器的設計。五、計算攝影學；六、高維度影像資料分析。</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="labfile">
+            <img src="/html_hw2/img/lab_picture/MIPLab.jpg">
+            <div class="labcontent">
+                <p style="font-size: 20px; text-align:center;"><strong>醫學影像處理實驗室</strong></p>
+                <p style="font-size: 15px; text-align:center; position:relative; top: -2px;">Medical Image Processing Lab</p>
+                <table>
+                    <tr>
+                        <td style="width: 70pt;">指導教授：</td>
+                        <td>喻石生</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">位　　置：</td>
+                        <td>理學大樓 1022A室[電話：04-22840497轉622]</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">網　　址：</td>
+                        <td><a href="http://miplab.cs.nchu.edu.tw/">http://miplab.cs.nchu.edu.tw/</a></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">簡　　介：</td>
+                        <td>本實驗室主要從事醫學影像處理及辨識之研究。由醫學影像處理至特徵擷取，再到圖形識別及統計分析來建構專家系統。研究重點在訓練學生具備醫學影像分析與處理、影像擷取、影像浮水印及影像加密等能力，進而達到影像辨識之目的。 目前我們主要的研究方向有： 一、醫學影像處理及識別 二、影像安全 三、生物資訊 四、自動機應用</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="labfile">
+            <img src="/html_hw2/img/lab_picture/VLSILab.jpg">
+            <div class="labcontent">
+                <p style="font-size: 20px; text-align:center;"><strong>超大型積體電路/電腦輔助設計實驗室</strong></p>
+                <p style="font-size: 15px; text-align:center; position:relative; top: -2px;">VLSI/CAD Lab</p>
+                <table>
+                    <tr>
+                        <td style="width: 70pt;">指導教授：</td>
+                        <td>王行健</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">位　　置：</td>
+                        <td>理學大樓 922A室[電話：04-22840497轉922]</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">網　　址：</td>
+                        <td><a href="http://vlsilab.cs.nchu.edu.tw/">http://vlsilab.cs.nchu.edu.tw/</a></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">簡　　介：</td>
+                        <td>本實驗室主要從事VLSI設計、驗證、測試、及設計自動化軟體技術之研發。主要研究範圍包括低功率設計、低功率測試、測試資料壓縮、內建自我測試技術、掃瞄測試、延遲測試、與實體繞線等。 目前我們主要的研究方向有： 一、超大型積體電路設計：電路與邏輯設計、FPGA設計、容錯系統、低功率電路設計。 二、驗證：正規驗證、功能驗證、時間驗證。 三、數位電路 / 系統單晶片測試：測試資料壓縮、低功率測試、內建自我測試、可測試設計、記憶體測試。 四、電腦輔助設計：高階合成、邏輯合成、實體合成。</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="labfile">
+            <img src="/html_hw2/img/lab_picture/GrapgLab.jpg">
+            <div class="labcontent">
+                <p style="font-size: 20px; text-align:center;"><strong>圖學多媒體暨虛擬實境實驗室</strong></p>
+                <p style="font-size: 15px; text-align:center; position:relative; top: -2px;">Graphics, Multimedia & Virtual Reality Lab</p>
+                <table>
+                    <tr>
+                        <td style="width: 70pt;">指導教授：</td>
+                        <td>王宗銘</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">位　　置：</td>
+                        <td>理學大樓 904室[電話：04-22840497轉904]</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">網　　址：</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">簡　　介：</td>
+                        <td>本實驗室研究電腦圖學、多媒體與虛擬實境領域之相關議題。研究的成果可應用於影像處理、製作電腦遊戲或動畫、秘密通訊、保護三維模型智慧財產權。 目前我們主要的研究方向有： 一、影像色彩組：研究灰階影像著色技巧、利用色彩移改變目標影像之色彩、中國水墨畫模擬； 二、材質紋理組：研究材質合成、材質轉移、自然界雲層模擬； 三、三維模型組：研究二維向量圖、三維多面體、三維點模型的浮水印與資訊隱藏。</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="labfile">
+            <img src="/html_hw2/img/lab_picture/CVMLLab.jpg">
+            <div class="labcontent">
+                <p style="font-size: 20px; text-align:center;"><strong>電腦視覺暨多媒體實驗室</strong></p>
+                <p style="font-size: 15px; text-align:center; position:relative; top: -2px;">Computer Vision & Multimedia Lab</p>
+                <table>
+                    <tr>
+                        <td style="width: 70pt;">指導教授：</td>
+                        <td>黃春融</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">位　　置：</td>
+                        <td>理學大樓 702C室[電話：04-22840497轉716]</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">網　　址：</td>
+                        <td><a href="http://cvml.cs.nchu.edu.tw/">http://cvml.cs.nchu.edu.tw/</a></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">簡　　介：</td>
+                        <td>本實驗室為電腦視覺暨多媒體實驗室，主要進行有關電腦視覺、多媒體訊號處理、影像處理、醫學影像處理與相關應用之研究，並根據上述領域之研究議題進行演算法的開發以及程式的實作。希望讓實驗室同學能夠學習到如何針對問題獨立思考並發展解決問題的方法，再透過視窗程式進行實作，最後學習如何報告所發展的成果與論文撰寫。 目前我們主要的研究方向有： 一、電腦視覺 (Computer Vision) 二、多媒體訊號處理 (Multimedia Signal Processing) 三、影像處理 (Image Processing) 四、醫學影像處理 (Medical Image Processing) 五、視訊監控 (Video Surveillance)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="labfile">
+            <img src="/html_hw2/img/lab_picture/NLPLab.png">
+            <div class="labcontent">
+                <p style="font-size: 20px; text-align:center;"><strong>自然語言處理實驗室</strong></p>
+                <p style="font-size: 15px; text-align:center; position:relative; top: -2px;">Natural Language Processing Lab</p>
+                <table>
+                    <tr>
+                        <td style="width: 70pt;">指導教授：</td>
+                        <td>范耀中</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">位　　置：</td>
+                        <td>理學大樓 721室[電話：04-22840497轉721]</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">網　　址：</td>
+                        <td><a href="http://nlp.cs.nchu.edu.tw">http://nlp.cs.nchu.edu.tw</a></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 70pt;">簡　　介：</td>
+                        <td>本實驗室著眼資料探勘技術領域進行研究；我們以資料工程技術為出發點考慮各式不一樣應用環境中所產生的資料進行該類型資料之查詢處理與探勘。近期研究規劃目標，為利用深度學習技術(Deep Learning)於文字資料探勘與自然語言處理(Text Mining and Natural Language Processing)之研究，目前實驗室研究成員之研究主題著重於機器閱讀理解(Machine Reading Comprehension)與自然語言生成(Natural Language Generation)兩面向。</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <div class="foot">
+            <p>國立中興大學資訊工程學系</p>
+            <p>402 台中市南區興大路 145 號 - 理學大樓 8 樓 </p>
+            <p>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</p>
+            <p>MAIL: ce@dragon.nchu.edu.tw</p>
+            <p>&copy; 2022 shiro-wang</p>
+            <a href="/html_hw2/feedback.html">意見回饋系統</a> | <a href="/html_hw2/webmap.html">網站地圖</a> | <a href="/html_hw2/enweb/main_v1_en.html">English</a>
+        </div>
+    </footer>
+</body>
+</html>

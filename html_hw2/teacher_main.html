@@ -6,452 +6,553 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>動態網頁程式設計第I次作業_4108056004_王思正</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: #111;
+          }
+          .dropbtn {
+          background-color: #333;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          }
+  
+          /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+          position: relative;
+          display: inline-block;
+          }
+  
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          }
+  
+          /* Links inside the dropdown */
+          .dropdown-content a {
+          color: black;
+          padding: 16px 16px;
+          text-decoration: none;
+          display: block;
+          }
+  
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #f1f1f1}
+  
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {
+          display: block;
+          }
+  
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+          .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+          }
+          .responsive {
+          width: 80%;
+          max-width: 800pt;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          }
+  
+          .content{
+            width:80% ;margin: 20px auto; text-align: center
+          }
+  
+          .foot{
+            align-items: center; width:80% ;margin: 100px auto; text-align: left; max-width: 800pt; font-size: 10px; background-color: rgb(196, 250, 250);
+          }
+          .midmessage{
+            margin: 10px auto; width: 80% auto; max-width: 800pt;
+          }
+          .teacherfile{
+            margin: 30pt 0;
+          }
+          .teacherfile img{
+            display:block ;margin: 0 auto; width: 200px;
+          }
+          .teacherfile table{
+            margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt
+          }
+          .teacherfile tr {
+            border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;
+          }
+          
+    </style>
 </head>
 <body>
     <p style="text-align: center;">
-        <a href="/html_hw1/main_v1.html"><img src="/html_hw1/img/nchu.png" alt="nchu" style="width: 80%; max-width: 800pt; height: auto; margin-left: auto; margin-right: auto;"></a>
+        <a href="/html_hw2/main_v1.html"><img src="/html_hw2/img/nchu.png" alt="nchu" style="width: 80%; max-width: 800pt; height: auto; margin-left: auto; margin-right: auto;"></a>
     </p>
     <div class="container" >
         <div>
-            <ul style="list-style-type: none; margin: 0; padding: 0; overflow: visible; background-color: #333;">
-                <div style="position: relative; display: inline-block;">
-                    <li style="background-color: #333; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer;">
-                        <a href="/html_hw1/member.html" style="display: block; color: white; text-align: center; text-decoration: none;">&lt;&lt;前頁</a>
+            <ul>
+                <div class="dropdown">
+                    <li>
+                        <a href="/html_hw2/main_v1.html">&lt;&lt;前頁</a>
                     </li>
                 </div>
             </ul>
         </div>
     </div>
-    <div style="margin: 10px auto; width: 80% auto; max-width: 800pt;">
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Shyr-Shen.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+    <div class="midmessage">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Shyr-Shen.jpg">
             <p style="font-size: 20px; text-align:center"><strong>喻石生 Shyr-Shen Yu</strong></p>
             <p style="font-size: 15px; text-align:center">教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr>
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>加拿大西安大略大學計算機科學博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲109年度興大之光, 彰化高中老師, 嶺東商專講師, 國立中興大學應用數學系教授</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Pattern Recognition, Biological & Medical Image Processing, Bioinformation, Data Mining</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 807</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://miplab.cs.nchu.edu.tw/teacher.html</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>pyu@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Sying_Jyan.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Sying_Jyan.jpg">
             <p style="font-size: 20px; text-align:center"><strong>王行健 Sying-Jyan Wang</strong></p>
             <p style="font-size: 15px; text-align:center">特聘教授兼電機資訊學院副院長</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr>
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>美國普林斯頓大學電機博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲109學年度服務特優Ⅱ,美國AT&T貝爾實驗室研究員</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">專長領域：</td>
                     <td>VLSI Design, Digital System Testing, CAD</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 910</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://vlsilab.cs.nchu.edu.tw/professor.html</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>sjwang@cs.nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Chung_Ming.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Chung_Ming.jpg">
             <p style="font-size: 20px; text-align:center"><strong>王宗銘 Chung-Ming Wang</strong></p>
             <p style="font-size: 15px; text-align:center">教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr>
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>英國里茲大學資訊工程暨科學博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>統一企業公司助理工程師, 英國IBM 科學研究中心研究</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Computer Graphics, Steganography, Watermarking, Color Science</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr>
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 915</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://gmvr.cs.nchu.edu.tw/cmwang</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>cmwang@cs.nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Der-Chen.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Der-Chen.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>黃德成 Der-Chen Huang</strong></p>
             <p style="font-size: 15px; text-align:center">教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立中正大學資訊工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>中山科學研究院, 工研院電通所, 國立勤益技術學院電子工程系, 國立中興大學校友總會祕書長、中部科學園區產學訓協會財務長、國立中興大學計資中心主任、國立中興大學校友中心主任</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>VLSI Design and Testing, Digital Signal Processing, Network, Image Processing</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 920</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://soc.cs.nchu.edu.tw/adviser.php</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>huangdc@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Yen-Jen.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Yen-Jen.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>張延任 Yen-Jen Chang</strong></p>
             <p style="font-size: 15px; text-align:center">教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立台灣大學資訊工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲108學年度服務特優I教師,國立中興大學資訊科學系助理教授</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Low Power VLSI Design, Memory Circuit Design, Embedded System, Intelligent Robot System</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 918</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>https://lpca.cs.nchu.edu.tw/</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>ychang@cs.nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Pi-Chung.png" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Pi-Chung.png" >
             <p style="font-size: 20px; text-align:center"><strong>王丕中 Pi-Chung Wang</strong></p>
             <p style="font-size: 15px; text-align:center">特聘教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立交通大學資訊工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>中華電信研究所助理研究員</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>High Speed Networks, Wireless Sensor Networks, Algorithms</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0884 ext 303</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://nclab.cs.nchu.edu.tw/advisor.php</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>pcwang@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Jiunn-Lin.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Jiunn-Lin.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>吳俊霖 Jiunn-Lin Wu</strong></p>
             <p style="font-size: 15px; text-align:center">教授兼系主任</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立成功大學電機工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲109學年度教學特優Ⅱ, 榮獲109學年度優良勞作教育導師, 榮獲110年度產學績優教師II, 榮獲111年度產學績優教師Ⅱ, 友立資訊資深主任工程師, 國立中興大學資訊科學系助理教授, 國立中興大學計資中心服務諮詢組組長</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Image Processing, Machine Learning, Machine Vision, Multimedia Signal Processing, Pattern Recognition, Computational Photography</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 919</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>https://drphototw.wixsite.com/wujl</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>jlwu@cs.nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Chun-Rong.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Chun-Rong.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>黃春融 Chun-Rong Huang</strong></p>
             <p style="font-size: 15px; text-align:center">特聘教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立成功大學電機工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>中央研究院資訊科學研究所博士後研究</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Computer Vision, Multimedia Signal Processing, Medical Image Processing</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 805</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://www.cs.nchu.edu.tw/~crhuang/</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>crhuang@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Hsung-Pin.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Hsung-Pin.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>張軒彬 Hsung Pin Chang</strong></p>
             <p style="font-size: 15px; text-align:center">教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立交通大學資訊科學博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲102學年度教學特優教師, 國立交通大學電子資訊研究中心博士後研究員, 國立彰化師範大學電子系助理教授, 國立中興大學資訊科學系助理教授</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Software I/O Stack, Embedded Systems, Cloud Computing, Linux Operating Systems</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 808</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://osnet.cs.nchu.edu.tw/hpchang.html</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>hpchang@cs.nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Hsueh-Wen.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Hsueh-Wen.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>曾學文 Hsueh-Wen Tseng</strong></p>
             <p style="font-size: 15px; text-align:center">教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立台灣大學資訊工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲108學年度優良勞作教育導師, 友勁科技專案副理, 工研院雲端中心工程師</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Wireless Networks, Networks on Chip, Cloud Computing and Networking, Performance Evaluation</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 908</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://web.nchu.edu.tw/~hwtseng</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>hwtseng@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Huan.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Huan.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>陳 煥 Huan Chen</strong></p>
             <p style="font-size: 15px; text-align:center">副教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>美國南加州大學(USC)電機工程博士, 清華大學電機工程碩士, 學士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>中正大學助理教授, 副教授, 中正大學學務處畢僑組組長</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Wireless Sensor Networks (WSN), Body Area Networks (BAN), Network Optimization, Signal Processing, MG+4C Embedded Systems, Android and Cloud Services</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 810</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>https://welcome-to-awin-lab.webnode.tw/professor/</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>huan@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Yao-Chung.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Yao-Chung.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>范耀中 Yao-Chung Fan</strong></p>
             <p style="font-size: 15px; text-align:center">副教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立清華大學資訊工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>榮獲107年度產學績優教師,榮獲110年度產學績優教師II,賓州州立大學訪問學者</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Natural Language Processing, Text Mining, Information Retrieval</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 704</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>http://yfan.nlpnchu.org/</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>yfan@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Shu-Yu.jpg" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Shu-Yu.jpg" >
             <p style="font-size: 20px; text-align:center"><strong>郭姝妤 Shu-Yu Kuo</strong></p>
             <p style="font-size: 15px; text-align:center">助理教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>國立暨南國際大學資訊工程學系學士、碩士、博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>國立臺北科技大學資訊工程學系助理教授</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Metaheuristic, Optimization, Financial Technology, Quantum Information Science, and Wireless Sensor Network</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 812</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>https://sites.google.com/view/shuyukuo/</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>shuyuk@nchu.edu.tw</td>
                 </tr>
             </table>
         </div>
-        <div style="margin: 10pt 0;">
-            <img src="/html_hw1/img/teachers_picture/Jason.png" style="display:block ;margin: 0 auto; width: 200px;">
+        <div class="teacherfile">
+            <img src="/html_hw2/img/teachers_picture/Jason.png" >
             <p style="font-size: 20px; text-align:center"><strong>林傑森 Jason Lin</strong></p>
             <p style="font-size: 15px; text-align:center">助理教授</p>
-            <table style="margin: 0 auto; font-size:15px; border: 1px dashed rgb(182, 182, 182); border-collapse: collapse; width:80%; max-width: 500pt">
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+            <table>
+                <tr >
                     <td style="width: 70pt;">學　　歷：</td>
                     <td>美國德州農工大學計算機工程博士</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">經　　歷：</td>
                     <td>逢甲大學國際科技與管理學院助理教授</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">專長領域：</td>
                     <td>Quantum Computing, Artificial Intelligence, Multimedia Security</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">連絡電話：</td>
                     <td>(04)2284-0497 ext 913</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">個人網頁：</td>
                     <td>https://aggielab.github.io/jasonlin.html</td>
                 </tr>
-                <tr style="border: 1px dashed rgb(182, 182, 182); border-collapse: collapse;">
+                <tr >
                     <td style="width: 70pt;">電子信箱：</td>
                     <td>jasonlin@cs.nchu.edu.tw</td>
                 </tr>
@@ -465,7 +566,7 @@
             <p>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</p>
             <p>MAIL: ce@dragon.nchu.edu.tw</p>
             <p>&copy; 2022 shiro-wang</p>
-            <a href="/html_hw1/feedback.html">意見回饋系統</a> | <a href="/html_hw1/webmap.html">網站地圖</a> | <a href="/html_hw1/enweb/main_v1_en.html">English</a>
+            <a href="/html_hw2/feedback.html">意見回饋系統</a> | <a href="/html_hw2/webmap.html">網站地圖</a> | <a href="/html_hw2/enweb/main_v1_en.html">English</a>
         </div>
     </footer>
 </body>
