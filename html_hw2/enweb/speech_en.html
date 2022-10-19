@@ -1,0 +1,231 @@
+<!--
+4108056004 王思正 第二次作業10/20
+4108056004 MingWangThe Second Homework 10/20
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁程式設計第2次作業_4108056004_王思正</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: #111;
+          }
+          .dropbtn {
+          background-color: #333;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          }
+  
+          /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+          position: relative;
+          display: inline-block;
+          }
+  
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          }
+  
+          /* Links inside the dropdown */
+          .dropdown-content a {
+          color: black;
+          padding: 16px 16px;
+          text-decoration: none;
+          display: block;
+          }
+  
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #f1f1f1}
+  
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {
+          display: block;
+          }
+  
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+          .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+          }
+          .responsive {
+          width: 80%;
+          max-width: 800pt;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          }
+  
+          .content{
+              width:80% ;margin: 20px auto; text-align: center
+          }
+  
+          .foot{
+              align-items: center; width:80% ;margin: 100px auto; text-align: left; max-width: 800pt; font-size: 10px; background-color: rgb(196, 250, 250);
+          }
+          .midmessage{
+            margin: 0 auto; width: 80% auto; max-width: 800pt;
+          }
+          
+          .midmessage div h3{
+            font-size: 15pt;
+          }
+          .midmessage div p{
+            font-size: 10pt; color:rgb(32, 151, 219)
+          }
+          .date{
+            color: rgb(187, 187, 187); width: 80% auto; max-width: 800pt;
+          }
+          .dashline{
+            border: 2px dashed rgb(194, 194, 194);
+          }
+          .container {
+            position: relative;border-style: solid;border-color:rgb(170, 170, 170);border-radius: 10px; margin: 20px auto; text-align:left; padding: 10px;
+          }
+          .overlay {
+            position: absolute;
+            top: 10px;
+            bottom: 0;
+            left: 50%;
+            right: 0;
+            height: 80%;
+            width: 50%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #ffffff;
+            border-style: none;
+            overflow: scroll;
+          }
+          .container:hover .overlay {
+            opacity: 1;
+          }
+          .text {
+            color: rgb(0, 101, 253);
+            font-size: 14px;
+            position: absolute;
+            border-style: none;
+            text-align: left;
+          }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <a href="/html_hw2/enweb/main_v1_en.html"><img src="/html_hw2/img/nchu.png" alt="nchu" style="width: 80%; max-width: 800pt; height: auto; margin-left: auto; margin-right: auto;"></a>
+    </div>
+    <div class="container" >
+        <div>
+            <ul>
+                <div class="dropdown">
+                    <li>
+                        <a href="/html_hw2/enweb/main_v1_en.html">&lt;&lt;Last page</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="midmessage">
+        <h1>Recent Presentations</h1>
+        <p class="date">Nov. 2022</p>
+        <hr class="dashline">
+        <div class="container">
+            <h3>Introduction to IEEE Full Text Electronic Database, Turnitin Paper Matching System</h3>
+            <p>2022-11-25</p>
+            <div class="overlay">
+                <div class="text">
+                    Speeker：Mr. 李修華（IEEE Database System Instructor）<br>
+                    Mrs. 張琬人（Librarian, Chung Hsing University）<br>
+                    Location：Information Science Building, Ground Floor, Chi Ping Hall <br>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>To be determined</h3>
+            <p>2022-11-11</p>
+            <div class="overlay">
+                <div class="text">
+                    Speeker：Assistant Professor 賴俊鳴<br>
+                    Department of Information Engineering, Tunghai University<br>
+                    Location：Information Science Building, Ground Floor, Chi Ping Hall<br>
+                </div>
+            </div>
+        </div>
+        <p class="date">Aug. 2021</p>
+        <hr class="dashline">
+        <div class="container">
+            <h3>Combining pool sports science and AI: from sports and leisure industry to Olympic athletics</h3>
+            <p>2022-10-21</p>
+            <div class="overlay">
+                <div class="text">
+                    Speeker：Professor 吳昇光<br>
+                    Department of Athletics, National Taiwan University of Sport and Physical Education<br>
+                    Location：Information Science Building, Ground Floor, Chi Ping Hall<br>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>Information Security Industry Practice Sharing</h3>
+            <p>2022-10-14</p>
+            <div class="overlay">
+                <div class="text">
+                    Speeker：俞伯翰（Hank Yu） CEO / CISSP、劉若瑄（Desray Liu) Project Manager / CISSP <br>
+                    Location：Information Science Building, Ground Floor, Chi Ping Hall<br>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>Trend Micro 2023 R&D Alternative Service and Pre-employment Seminar</h3>
+            <p>2022-10-13</p>
+            <div class="overlay">
+                <div class="text">
+                    Speeker：Trend Micro 2023 R&D Alternative Service and Pre-employment Seminar<br>
+                    Location：Applied Technology Building, 3rd Floor, Room 337<br>
+                    Note：<br>
+                    Sign up for the briefing https://forms.office.com/r/THkp4HB07b <br>
+                    Submit your resume https://reurl.cc/qN61Dg <br>
+                    Please sign up in advance for a headcount.<br>
+                    If you want to learn more about next year's summer internship, please join us!<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <p>Department of Computer Science and Engineering, National Chung Hsing University</p>
+            <p>145 Xingda Rd., South Dist., Taichung City 402 - 理學大樓 8 F</p>
+            <p>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</p>
+            <p>MAIL: ce@dragon.nchu.edu.tw</p>
+            <p>&copy; 2022 shiro-wang</p>
+            <a href="/html_hw2/enweb/feedback_en.html">Feedbak system</a> | <a href="/html_hw2/enweb/webmap_en.html">Web-map</a> | <a href="/html_hw2/main_v1.html">中文</a>
+        </div>
+    </footer>
+</body>
+</html>

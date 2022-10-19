@@ -95,9 +95,7 @@
           .midmessage{
             margin: 0 auto; width: 80% auto; max-width: 800pt;
           }
-          .midmessage div{
-            border-style: solid;border-color:rgb(170, 170, 170);border-radius: 10px; margin: 20px auto; text-align:left; padding: 10px;
-          }
+          
           .midmessage div h3{
             font-size: 15pt;
           }
@@ -109,6 +107,33 @@
           }
           .dashline{
             border: 2px dashed rgb(194, 194, 194);
+          }
+          .container {
+            position: relative;border-style: solid;border-color:rgb(170, 170, 170);border-radius: 10px; margin: 20px auto; text-align:left; padding: 10px;
+          }
+          .overlay {
+            position: absolute;
+            top: 10px;
+            bottom: 0;
+            left: 50%;
+            right: 0;
+            height: 80%;
+            width: 50%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #ffffff;
+            border-style: none;
+            overflow: scroll;
+          }
+          .container:hover .overlay {
+            opacity: 1;
+          }
+          .text {
+            color: rgb(0, 101, 253);
+            font-size: 14px;
+            position: absolute;
+            border-style: none;
+            text-align: left;
           }
     </style>
 </head>
@@ -128,27 +153,68 @@
         </div>
     </div>
     <div class="midmessage">
-        <p class="date">June 2021</p>
+        <h1>近期演講</h1>
+        <p class="date">Nov. 2022</p>
         <hr class="dashline">
-        <div>
-            <p>恭賀本系吳俊霖教授榮獲國立中興大學110年度產學績優教師II殊榮！</p>
+        <div class="container">
+            <h3>IEEE 全文電子資料庫介紹、Turnitin論文比對系統</h3>
+            <p>2022-11-25</p>
+            <div class="overlay">
+                <div class="text">
+                    講者：李修華先生（IEEE資料庫系統講師）<br>
+                    張琬人小姐（中興大學圖書館館員）<br>
+                    地點：資訊科學大樓地下一樓致平廳 <br>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>恭賀本系范耀中副教授榮獲國立中興大學110年度產學績優教師II殊榮！</p>
+        <div class="container">
+            <h3>待定</h3>
+            <p>2022-11-11</p>
+            <div class="overlay">
+                <div class="text">
+                    講者：賴俊鳴助理教授<br>
+                    東海大學資訊工程學系<br>
+                    地點：資訊科學大樓地下一樓致平廳<br>
+                </div>
+            </div>
         </div>
         <p class="date">Aug. 2021</p>
         <hr class="dashline">
-        <div>
-            <p>恭賀本系吳俊霖教授榮獲109學年度國立中興大學優良勞作教育導師。</p>
+        <div class="container">
+            <h3>結合桌球運動科學與AI： 從運動休閒產業到奧運競技</h3>
+            <p>2022-10-21</p>
+            <div class="overlay">
+                <div class="text">
+                    講者：吳昇光教授<br>
+                    國立臺灣體育運動大學競技運動學系<br>
+                    地點：資訊科學大樓地下一樓致平廳<br>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>恭賀本系范耀中副教授榮獲109學年度電機資訊學院傑出教學教師獎。</p>
+        <div class="container">
+            <h3>資安產業實務分享</h3>
+            <p>2022-10-14</p>
+            <div class="overlay">
+                <div class="text">
+                    講者：俞伯翰（Hank Yu） CEO / CISSP、劉若瑄（Desray Liu) Project Manager / CISSP <br>
+                    地點：資訊科學大樓地下一樓致平廳<br>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>恭賀本系曾學文教授榮獲109學年度電機資訊學院傑出服務教師獎。</p>
-        </div>
-        <div>
-            <p>恭賀本系陳煥副教授榮獲109學年度電機資訊學院優良導師。</p>
+        <div class="container">
+            <h3>趨勢科技2023研發替代役暨預聘徵才說明會</h3>
+            <p>2022-10-13</p>
+            <div class="overlay">
+                <div class="text">
+                    講者：趨勢科技2023研發替代役暨預聘徵才說明會<br>
+                    地點：應用科技大樓3樓337教室<br>
+                    備註：<br>
+                    報名參加說明會 https://forms.office.com/r/THkp4HB07b <br>
+                    投遞履歷 https://reurl.cc/qN61Dg <br>
+                    報名的同學會提供餐盒與伴手禮，請預先報名以便統計人數。<br>
+                    現場加碼趨勢實習經驗分享，想提早了解明年暑期實習資訊的同學也歡迎參加唷！<br>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
