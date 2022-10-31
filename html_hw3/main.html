@@ -1,0 +1,390 @@
+<!--
+4108056004 王思正 第III次作業10/27
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkrange(num){
+            /*if (num==NaN){
+                window.alert("Num: "+ num + " not a number, force number to be 0");
+                return 0;
+            }*/
+            if (num>=1000){
+                window.alert("Num: "+ num + " out of range, force number to be 0");
+                return 0;
+            }
+            return num;
+        }
+        /*function swap(num1, num2){
+            var j = num1;
+            num1 = num2;
+            num2 = i;
+        }
+        function compare(n1, n2){
+            document.writeln("<p>n1: "+n1+" n2: "+n2+"</p>")
+            if(n1>n2){
+                swap(n1,n2);
+            }
+        }*/
+        function noarray_sort(n1, n2, n3, n4, n5, n6, n7, n8){
+            for(var j=0;j<8;j++){
+                if(n1>n2){
+                    var i = n1;
+                    n1 = n2;
+                    n2 = i;
+                }
+                if(n2>n3){
+                    var i = n2;
+                    n2 = n3;
+                    n3 = i;
+                }
+                if(n3>n4){
+                    var i = n3;
+                    n3 = n4;
+                    n4 = i;
+                }
+                if(n4>n5){
+                    var i = n4;
+                    n4 = n5;
+                    n5 = i;
+                }
+                if(n5>n6){
+                    var i = n5;
+                    n5 = n6;
+                    n6 = i;
+                }
+                if(n6>n7){
+                    var i = n6;
+                    n6 = n7;
+                    n7 = i;
+                }
+                if(n7>n8){
+                    var i = n7;
+                    n7 = n8;
+                    n8 = i;
+                }
+                //document.writeln("<h2>After sort: "+n1+" "+n2+" "+n3+" "+n4+" "+n5+" "+n6+" "+n7+" "+n8+"</h2>");
+            }
+            document.writeln("<h2>After sort: "+n1+" "+n2+" "+n3+" "+n4+" "+n5+" "+n6+" "+n7+" "+n8+"</h2>");
+            document.writeln("<h2>Maximum: "+n8+"</h2>");
+            document.writeln("<h2>Minimum: "+n1+"</h2>");
+            var medium = (n4+n5) / 2;
+            document.writeln("<h2>Medium: "+medium+"</h2>");
+            document.writeln("<h2>Prime num: ");
+            var prime=0;
+            for(var i=2;i<=Math.sqrt(n1);i++){
+                if(n1%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n1<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n1+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n2);i++){
+                if(n2%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n2<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n2+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n3);i++){
+                if(n3%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n3<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n3+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n4);i++){
+                if(n4%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n4<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n4+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n5);i++){
+                if(n5%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n5<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n5+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n6);i++){
+                if(n6%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n6<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n6+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n7);i++){
+                if(n7%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n7<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n7+" ");
+            }
+            prime=0;
+            for(var i=2;i<=Math.sqrt(n8);i++){
+                if(n8%i==0){
+                    prime=1;
+                    break;
+                }
+            }
+            if(n8<=1){
+                prime=1;
+            }
+            if(prime==0){
+                document.writeln(n8+" ");
+            }
+            document.writeln("</h2>");
+            document.writeln("<h2>Armstrong: ");
+            var hundred;
+            var ten;
+            var digit;
+            var temp;
+            var now;
+            var count;
+            var total;
+            count=1;
+            now = n1;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            count=1;
+            now = n2;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            count=1;
+            now = n3;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            count=1;
+            now = n4;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            count=1;
+            now = n5;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            count=1;
+            now = n6;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            count=1;
+            now = n7;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            count=1;
+            now = n8;
+            hundred = Math.floor(now / 100);
+            temp = now - hundred*100;
+            ten = Math.floor(temp / 10);
+            temp = temp - ten*10;
+            digit = temp;
+            total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            while(total <= now){
+                if(now == Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count)){
+                    document.writeln(now + " ");
+                    break;
+                }else{
+                    count += 1;
+                }
+                total = Math.pow(hundred, count)+Math.pow(ten,count)+Math.pow(digit,count);
+            }
+            
+            document.writeln("</h2>");
+            document.writeln("<h2>Fibonacci sequence ?<br>")
+            if((n1+n2)==n3 && (n2+n3)==n4 && (n3+n4)==n5 && (n4+n5)==n6 && (n5+n6)==n7 && (n6+n7)==n8){
+                document.writeln("Yes</h2>");
+            }else{
+                document.writeln("No</h2>");
+            }
+        }
+        
+        var first;
+        var second;
+        var third;
+        var fourth;
+        var fifth;
+        var sixth;
+        var seventh;
+        var eighth;
+        var num_1=-1;
+        var num_2=-1;
+        var num_3=-1;
+        var num_4=-1;
+        var num_5=-1;
+        var num_6=-1;
+        var num_7=-1;
+        var num_8=-1;
+        first = window.prompt("Please enter 1st num smaller than 1000");
+        num_1 = parseInt(first);
+        num_1 = checkrange(num_1);
+        second = window.prompt("Please enter 2nd num smaller than 1000");
+        num_2 = parseInt(second);
+        num_2 = checkrange(num_2);
+        third = window.prompt("Please enter 3rd num smaller than 1000");
+        num_3 = parseInt(third);
+        num_3 = checkrange(num_3);
+        fourth = window.prompt("Please enter 4th num smaller than 1000");
+        num_4 = num_4 = parseInt(fourth);
+        num_4 = checkrange(num_4);
+        fifth = window.prompt("Please enter 5th num smaller than 1000");
+        num_5 = num_5 = parseInt(fifth);
+        num_5 = checkrange(num_5);
+        sixth = window.prompt("Please enter 6th num smaller than 1000");
+        num_6 = parseInt(sixth);
+        num_6 = checkrange(num_6);
+        seventh = window.prompt("Please enter 7th num smaller than 1000");
+        num_7 = parseInt(seventh);
+        num_7 = checkrange(num_7);
+        eighth = window.prompt("Please enter 8th num smaller than 1000");
+        num_8 = num_8 = parseInt(eighth);
+        checkrange(num_8);
+        noarray_sort(num_1, num_2, num_3, num_4, num_5, num_6, num_7, num_8);
+        
+    </script>
+</body>
+</html>
