@@ -3,6 +3,9 @@ var pokerImages = new Array(5); // array to store img elements
 var player_poker_num = 0; // number of pokers player get currenttly
 var player_point = new Array(5); // keep the point player get
 var player_point_final = 0;
+var player_chip = 1000;
+var player_bet = 0;
+
 // set of banker
 var banker_pokerImages = new Array(5);
 var banker_poker_num = 0;
@@ -15,6 +18,11 @@ var player_history_result = new Array(50);
 var banker_history_result = new Array(50);
 var win_history = new Array(50);
 var history_num = 0;
+
+// set of mode
+var Normal = 0;
+var Surrender = 1;
+var mode = Normal;
 
 // get die img elements
 function start()
@@ -29,24 +37,76 @@ function start()
    double_button.addEventListener( "click", double, false);
    var split_button = document.getElementById( "split" );
    split_button.addEventListener( "click", split, false);
+   var check_button = document.getElementById( "checkbet" );
+   check_button.addEventListener( "click", checkbet, false );
    var length = pokerImages.length;
+   document.getElementById("chip").innerHTML = player_chip;
+   document.getElementById("bet").innerHTML = player_bet;
 
    for ( var i = 0; i < length; ++i )
    {
       pokerImages[ i ] = document.getElementById( "poker" + (i + 1) );
       banker_pokerImages[ i ] = document.getElementById( "banker_poker" + (i + 1) );
    } // end for
-   dealing();
+   // checkbit();
+   // dealing();
 } // end function start
+
+// checkbit
+
+function checkbet()
+{
+   switch(document.querySelector('input[name="bet"]:checked').value){
+      case "50":
+         player_bet = 50;
+         break;
+      case "100":
+         player_bet = 100;
+         break;
+      case "200":
+         player_bet = 200;
+         break;
+      case "500":
+         player_bet = 500;
+         break;
+      default:
+         return 0;
+   }
+   if (whether_enough() == false){
+      player_bet = 0;
+      return 0;
+   }
+   document.getElementById("bet").innerHTML = player_bet;
+   document.getElementById("checkbet").disabled = true;
+   document.getElementById("hit").disabled = false;
+   document.getElementById("reset").disabled = true;
+   document.getElementById("stand").disabled = false;
+   document.getElementById("double").disabled = false;
+   document.getElementById("split").disabled = true;
+   dealing();
+}
+
+function whether_enough(){
+   if (player_bet > player_chip){
+      return false;
+   }
+   return true;
+}
 
 // double
 function double()
 {
+   player_bet *= 2;
+   if (whether_enough() == false){
+      player_bet /= 2;
+      return 0;
+   }
    var point;
    point = Math.floor( 1 + Math.random() * 52 );
    setImage( player_poker_num, point );
    check_point( point );
    player_poker_num += 1;
+   
    banker_time();
 }
 
@@ -75,18 +135,22 @@ function reset()
    for(var i = 0; i < length; ++i){
       resetImagePoint(i);
    }
-   document.getElementById("hit").disabled = false;
+   document.getElementById("hit").disabled = true;
    document.getElementById("reset").disabled = true;
-   document.getElementById("stand").disabled = false;
-   document.getElementById("double").disabled = false;
+   document.getElementById("stand").disabled = true;
+   document.getElementById("double").disabled = true;
    document.getElementById("split").disabled = true;
+   document.getElementById("checkbet").disabled = false;
    document.getElementById("total").innerHTML = "";
    document.getElementById("b_total").innerHTML = "";
+
+   player_bet = 0;
+   document.getElementById("bet").innerHTML = player_bet;
    player_poker_num = 0;
    player_point_final = 0;
    banker_poker_num = 0;
    banker_point_fianl = 0;
-   dealing();
+   mode = Normal;
 }
 
 function finish_control(){
@@ -232,29 +296,34 @@ function banker_poker_point_get()
 
 function vic_defeat()
 {
-   var gameresult;
-   var result = 0;
-   if (player_point_final > 21){
-   }else if (banker_point_fianl > 21){
-      result = 1;
-   }else if (player_point_final > banker_point_fianl){
-      result = 1;
-   }else if ( player_point_final == banker_point_fianl){
-      result = 2;
+   if (mode == Normal){
+      var gameresult;
+      var result = 0;
+      if (player_point_final > 21){
+      }else if (banker_point_fianl > 21){
+         result = 1;
+      }else if (player_point_final > banker_point_fianl){
+         result = 1;
+      }else if ( player_point_final == banker_point_fianl){
+         result = 2;
+      }
+      switch(result){
+         case 0:
+            gameresult = "Defeat";
+            break;
+         case 1:
+            gameresult = "Victory";
+            break;
+         case 2:
+            gameresult = "Tie";
+            break;
+         default:
+            break;
+      }
+   }else if (mode == Surrender){
+      gameresult = "Defeat";
    }
-   switch(result){
-      case 0:
-         gameresult = "Defeat";
-         break;
-      case 1:
-         gameresult = "Victory";
-         break;
-      case 2:
-         gameresult = "Tie";
-         break;
-      default:
-         break;
-   }
+   update_playerchip(gameresult);
    document.getElementById("result").innerHTML = "Result: "+ gameresult;
    player_history [history_num] = "";
    banker_history [history_num] = "";
@@ -270,11 +339,22 @@ function vic_defeat()
    history_num += 1;
    update_history();
 }
+
+// deal with player chips
+function update_playerchip(gameresult){
+   if (gameresult == "Victory"){
+      player_chip += player_bet;
+   }else if (gameresult == "Defeat"){
+      player_chip -= player_bet;
+   }
+   document.getElementById("chip").innerHTML = player_chip;
+}
+
 // update frequency table in the page
 function update_history()
 {
    var results = "<table><caption>Blackjack history</caption>" +
-      "<thead><th>Round</th><th>Identity</th><th>Process</th><th>Total</th><th>Result</th></thead><tbody>";
+      "<thead><th>Round</th><th>Identity</th><th style=\"width: 400px\">Process</th><th>Total</th><th>Result</th></thead><tbody>";
 
    // create table rows for player
    for ( var i = 0; i < history_num; i++ )

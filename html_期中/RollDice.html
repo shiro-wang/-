@@ -37,10 +37,18 @@
                   <img id = "poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
                <div>Spliter Total: <p id="total"></p></div>
             </div> -->
+            <div>Player's total chips: <p id="chip"></p></div>
+            <div>Player's bet: <p id="bet"></p></div>
             <form action = "#">
-               <input id = "hit" type = "button" value = "Hit">
-               <input id = "stand" type = "button" value = "Stand">
-               <input id = "double" type = "button" value = "Double">
+               <input type="radio" name="bet" value="50">50</input>
+               <input type="radio" name="bet" value="100">100</input>
+               <input type="radio" name="bet" value="200">200</input>
+               <input type="radio" name="bet" value="500">500</input>
+               <input id = "checkbet" type = "button" value = "Checkbet">
+
+               <input id = "hit" type = "button" value = "Hit" disabled=true>
+               <input id = "stand" type = "button" value = "Stand" disabled=true>
+               <input id = "double" type = "button" value = "Double" disabled=true>
                <input id = "split" type = "button" value = "Split" disabled=true>
                <input id = "reset" type = "button" value = "Reset" disabled=true>
             </form>
