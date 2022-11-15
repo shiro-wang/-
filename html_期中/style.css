@@ -1,26 +1,75 @@
 img           { margin-right: 10px; width: 100px;}
-table         { width: 200px;
-                border-collapse:collapse; 
-                background-color: lightblue; }
-table, td, th { border: 1px solid black; 
-                padding: 4px; 
-                margin-top: 20px; }
-th            { text-align: left; 
-                color: white;
-                background-color: darkblue; }
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
 
 .wrap{ /*父元素*/
     width: 80%;
-    position: absolute;
+    height: auto;
     text-align: center;
+    max-width: 1000pt;
+    margin-left: auto; 
+    margin-right: auto;
 }
 .gameprocess {
     width: 50%;
     position: relative;
     float: left;
 }
+.gameprocess h1, .gamehistory h1{
+    text-align: left;
+}
 .gamehistory {
     width: 50%;
     position: relative;
     float: left;
+}
+.show{
+    text-align: left;
+    float: left;
+    margin: 10px;
+}
+.showtotal{
+    text-align: left;
+    float: left;
+    margin-top: 20px;
+}
+
+.clearfix{
+    clear: both;
+}
+ 
+.top_img_box{
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+}
+.top_img_box img{
+    width: 100%;
+    margin-top: -50px;
 }

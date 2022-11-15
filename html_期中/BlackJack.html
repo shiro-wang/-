@@ -1,44 +1,44 @@
+<!--
+4108056004 王思正 期中10/27
+4108056004 ShiroWang 期中10/27
+-->
 <!DOCTYPE html>
 
 <html>
    <head>
       <meta charset = "utf-8">
-      <title>Die Rolling Frequencies</title> 
+      <title>BlackJack</title> 
       <link rel = "stylesheet" type = "text/css" href = "style.css">
-      <script src = "RollDice.js"></script>
+      <script src = "BlackJack.js"></script>
    </head>
    <body>
-      <div id="wrap">
-         <div id="gameprocess">
+      <div class="wrap">
+         <div class="top_img_box"><img src="/html_期中/top_back.jpg" alt="top_back img"></div>
+         
+         <div class="gameprocess">
             <div>
-               <h1>莊家</h1>
+               <h1>Banker</h1>
                <p><img id = "banker_poker1" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 1 image">
                   <img id = "banker_poker2" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 2 image">
                   <img id = "banker_poker3" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 3 image">
                   <img id = "banker_poker4" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 4 image">
                   <img id = "banker_poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
-               <div>Banker Total: <p id="b_total"></p></div>
+               <div class="show">Banker Total: </div><div class="show" id="b_total"></div>
+               <div class="clearfix"></div>
             </div>
             <div>
-               <h1>玩家</h1>
+               <h1 id="player_name">Player</h1>
                <p><img id = "poker1" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 1 image">
                   <img id = "poker2" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 2 image">
                   <img id = "poker3" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 3 image">
                   <img id = "poker4" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 4 image">
                   <img id = "poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
-               <div>Player Total: <p id="total"></p></div>
+               <div class="show">Player Total: </div><div class="show" id="total"></div>
+               <div class="clearfix"></div>
             </div>
-            <!-- <div id="showsplit">
-               <h1>Split</h1>
-               <p><img id = "poker1" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 1 image">
-                  <img id = "poker2" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 2 image">
-                  <img id = "poker3" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 3 image">
-                  <img id = "poker4" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 4 image">
-                  <img id = "poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
-               <div>Spliter Total: <p id="total"></p></div>
-            </div> -->
-            <div>Player's total chips: <p id="chip"></p></div>
-            <div>Player's bet: <p id="bet"></p></div>
+            
+            <div class="show">Player's bet: </div><div class="show" id="bet"></div>
+            <div class="clearfix"></div>
             <form action = "#">
                <input type="radio" name="bet" value="50">50</input>
                <input type="radio" name="bet" value="100">100</input>
@@ -50,13 +50,24 @@
                <input id = "stand" type = "button" value = "Stand" disabled=true>
                <input id = "double" type = "button" value = "Double" disabled=true>
                <input id = "split" type = "button" value = "Split" disabled=true>
+               <input id = "surrender" type = "button" value = "Surrender" disabled=true>
+               <input id = "cheat" type = "button" value = "Cheat" disabled=true>
                <input id = "reset" type = "button" value = "Reset" disabled=true>
             </form>
-            <div id = "result"></div>
+            <h2 id = "result"></h2>
          </div>
-         <div id="gamehistory">
+         <div class="gamehistory">
+            <h2 class="show">Player's total chips: </h2><h2 class="show" id="chip"></h2>
+            <div class="clearfix"></div>
             <div id = "historytable"></div>
          </div>
       </div>
+      <div class="clearfix"></div>
+      <footer class="wrap">
+         <div style="margin: 100px auto; text-align: right;font-size: 10px;">
+            <p>&copy; 2022 shiro-wang</p>
+         </div>
+      </footer>
+      <div class="clearfix"></div>
    </body>
 </html>
