@@ -1,0 +1,26 @@
+img           { margin-right: 10px; width: 100px;}
+table         { width: 200px;
+                border-collapse:collapse; 
+                background-color: lightblue; }
+table, td, th { border: 1px solid black; 
+                padding: 4px; 
+                margin-top: 20px; }
+th            { text-align: left; 
+                color: white;
+                background-color: darkblue; }
+
+.wrap{ /*父元素*/
+    width: 80%;
+    position: absolute;
+    text-align: center;
+}
+.gameprocess {
+    width: 50%;
+    position: relative;
+    float: left;
+}
+.gamehistory {
+    width: 50%;
+    position: relative;
+    float: left;
+}

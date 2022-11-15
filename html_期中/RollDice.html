@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Die Rolling Frequencies</title> 
+      <link rel = "stylesheet" type = "text/css" href = "style.css">
+      <script src = "RollDice.js"></script>
+   </head>
+   <body>
+      <div id="wrap">
+         <div id="gameprocess">
+            <div>
+               <h1>莊家</h1>
+               <p><img id = "banker_poker1" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 1 image">
+                  <img id = "banker_poker2" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 2 image">
+                  <img id = "banker_poker3" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 3 image">
+                  <img id = "banker_poker4" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 4 image">
+                  <img id = "banker_poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
+               <div>Banker Total: <p id="b_total"></p></div>
+            </div>
+            <div>
+               <h1>玩家</h1>
+               <p><img id = "poker1" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 1 image">
+                  <img id = "poker2" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 2 image">
+                  <img id = "poker3" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 3 image">
+                  <img id = "poker4" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 4 image">
+                  <img id = "poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
+               <div>Player Total: <p id="total"></p></div>
+            </div>
+            <!-- <div id="showsplit">
+               <h1>Split</h1>
+               <p><img id = "poker1" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 1 image">
+                  <img id = "poker2" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 2 image">
+                  <img id = "poker3" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 3 image">
+                  <img id = "poker4" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 4 image">
+                  <img id = "poker5" src = "/html_期中/poker_img/poker_blank.jpg" alt = "poker 5 image"></p>
+               <div>Spliter Total: <p id="total"></p></div>
+            </div> -->
+            <form action = "#">
+               <input id = "hit" type = "button" value = "Hit">
+               <input id = "stand" type = "button" value = "Stand">
+               <input id = "double" type = "button" value = "Double">
+               <input id = "split" type = "button" value = "Split" disabled=true>
+               <input id = "reset" type = "button" value = "Reset" disabled=true>
+            </form>
+            <div id = "result"></div>
+         </div>
+         <div id="gamehistory">
+            <div id = "historytable"></div>
+         </div>
+      </div>
+   </body>
+</html>
