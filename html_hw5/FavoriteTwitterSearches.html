@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+   <title>Twitter Searches</title>
+   <link rel = "stylesheet" type = "text/css" href = "style.css">
+   <script src = "FavoriteTwitterSearches.js"></script>
+</head>
+<body>
+   <h2>Add New Bank</h2>
+   <p id = "welcomeMessage"></p>
+   <form action = "#">
+      <p><input id = "name" type = "text" placeholder = "Enter Company's name"></p>
+      <p><input id = "asset" type = "text" placeholder = "Enter Company's asset"></p>
+      <p><input id = "liability" type = "text" placeholder = "Enter Company's liability">
+         <input type = "button" value = "Save" 
+            id = "saveButton">
+         <input type = "button" value = "Clear All Saved Data"
+            id = "clearButton"></p>
+   </form>
+   <h2>Sale out Product</h2>
+   <form action = "#">
+      <p><input id = "product_cname" type = "text" placeholder = "Company (enter through the table)" disabled=true></p>
+      <p><input id = "product_name" type = "text" placeholder = "Name of product"></p>
+      <p><input id = "product_number" type = "text" placeholder = "Number of product"></p>
+      <p><input id = "product_price" type = "text" placeholder = "Price">
+         <input type = "button" value = "Save" 
+            id = "product_saveButton">
+      </p>
+   </form>
+   
+   <h1>Companies' data</h1>
+   <div id = "searches"></div>
+   <h2>Products' data</h2>
+   <div id = "product_searches"></div>
+</body>
+</html>
+
