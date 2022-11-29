@@ -31,7 +31,7 @@ function loadSearches() {
             "</td><td>" + com_obj.revenue + "</td><td>" + com_obj.expense + "</td><td>" + com_obj.date ;
 
             results += "<th><input id = '" + datas[data] + "' type = 'button' " + "value = 'Product' onclick = 'editProduct(id)'></th>" +
-                        "<th><input id = '" + datas[data] + "' type = 'button' " + "value = 'Delete' onclick = 'deleteTag(id)'></th></tr>";
+                        "<th><input id = '" + datas[data] + "' type = 'button' " + "value = 'Salary' onclick = 'editSalary(id)'></th></tr>";
         }else{
             var product_obj = JSON.parse(localStorage.getItem(datas[data]));
             var p_length = product_obj.length;
@@ -80,6 +80,12 @@ function deleteTag(tag) {
 
 // display existing tagged query for editing
 function editProduct(company_name) {
+    document.getElementById("product_cname").value = company_name;
+    loadSearches(); // reload searches
+} // end function editTag
+
+// display existing tagged query for editing
+function editSalary(company_name) {
     document.getElementById("product_cname").value = company_name;
     loadSearches(); // reload searches
 } // end function editTag
